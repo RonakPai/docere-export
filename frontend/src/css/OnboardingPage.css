@@ -1,0 +1,139 @@
+/* Overall page container */
+.onboarding-container {
+  display: flex;
+  flex-direction: column;
+  font-family: "InterRegular";
+  width: 100%;
+  height: 100vh;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+b{
+  font-family: "InterBold";
+}
+
+/* Top half: Animated Logo container */
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 28%;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* The actual logo styling */
+.animated-logo {
+  max-width: 50%;
+  max-height: 80%;
+}
+
+/* Bottom container: takes up remaining 50% */
+.bottom-container {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+}
+
+/* Container for the How to Use & About sections side by side */
+.sections {
+  display: flex;
+  flex: 1; /* Fills available vertical space before button */
+}
+
+/* Left half: How to Use */
+.how-to-use-section {
+  width: 50%;
+  padding: 2rem;
+  box-sizing: border-box;
+  animation: fadeIn 2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how-to-use-section h2 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+.how-to-use-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.how-to-use-section li {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.about-text {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* Right half: About */
+.about-section {
+  width: 50%;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+  animation: fadeIn 2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section h2 {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  margin: 0.5rem 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+/* Bottom: Button container */
+.ready-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+/* "Ready to Learn?" button styling */
+.ready-button {
+  background: #4f6dfa;
+  color: #fff;
+  border: none;
+  margin: 0;
+  padding: 10px 70px;
+  font-size: 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  animation: fadeIn 4s ease-in-out;
+}
+
+.ready-button:hover {
+  background: #3c52bc;
+}
+
+/* Simple fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,46 @@
+.how-it-works {
+  width: 70vw;
+    height: 75vh;
+    margin: 30px;
+    background-color: white;
+    border-radius: 35px;
+    padding: 20px;
+  }
+
+  .explain-row{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .how-it-works-title{
+    text-align: center;
+    font-size: 40px;
+    font-family: "InterMedium";
+    color: #a6a6a6;
+    margin-top: 30vh;
+    margin-bottom: 5vh;
+  }
+
+  .explain-bubble {
+    text-align: left;
+    padding: 30px;
+    margin: 10px;
+    background-color: #f6f6f6;
+    border-radius: 50px;
+  }
+  
+  .explain-bubble h3 {
+    font-family: 'InterMedium', sans-serif;
+    margin-bottom: 10px;
+    color: #a6a6a6;
+  }
+  
+  .explain-bubble p {
+    font-family: 'InterLight', sans-serif;
+    color: #a6a6a6;
+  }
+  
+  
+  
+  
+  

@@ -1,0 +1,186 @@
+.home-page{
+    display: flex;
+    margin: 40px;
+    justify-content: space-evenly;
+}
+
+.home-left-side {
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    width: 65%;
+    box-sizing: border-box;
+  }
+
+  .home-right-side {
+    width: 30%;
+  }
+  
+  .in-progress-section, .lessons-section, .public-lessons {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .section-header {
+    font-size: 24px;
+    margin: 10px;
+    font-family: "InterMedium";
+  }
+
+  .in-progress-lessons{
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .in-progress-box, .public-lessons-box {
+    flex: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .in-progress-box{
+    width: 40%;
+    cursor: pointer;
+    height: 20vh;
+  }
+
+  .in-progress-box h3, .public-lessons-box h3{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+
+  .in-progress-box p, .public-lessons-box p{
+    font-size: 14px;
+    color: #999;
+  }
+
+  .progress-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #5853ff; /* Blue bar */
+    transition: width 0.3s ease;
+    border-radius: 5px;
+}
+
+.progress-percent {
+    margin-left: 5px; /* Adds space between the bar and percentage */
+    font-size: 14px;
+    font-family: 'InterMedium', sans-serif;
+    color: #333;
+    position: relative;
+    left: 5px; /* Moves the percentage number to the right of the bar */
+    white-space: nowrap;
+}
+
+.public-lessons-container{
+    display: flex;
+    flex: none;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 90vh;
+}
+
+.join-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #6c63ff;
+    border: 1px solid #6c63ff;
+    border-radius: 20px;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+  }
+  
+  .join-button:hover {
+    background: #6c63ff;
+    color: #ffffff;
+  }
+
+  .toggle-buttons{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+  }
+
+ .toggle-buttons button {
+    background: none;
+    border: 1px #6c63ff solid;
+    font-size: 16px;
+    padding: 8px 12px;
+    color: #6c63ff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .toggle-buttons .created{
+    border-radius: 20px 0px 0px 20px;
+  }
+
+  .toggle-buttons .joined{
+    border-radius: 0px 20px 20px 0px;
+  }
+
+.toggle-buttons button.active, 
+.toggle-buttons button:hover {
+    background: #6c63ff;
+    color: #ffffff;
+  }
+
+
+  .past-lessons-container {
+    width: 95%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .lesson-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .lesson-table th, .lesson-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .lesson-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+  }
+  
+  .lesson-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .lesson-table td {
+    color: #555;
+  }
+
+  .no-lessons {
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+    margin-top: 20px;
+  }

@@ -1,0 +1,6 @@
+backend/keys.py
+frontend/node_modules
+backend/__pycache__
+AWSCLIV2.pkg
+build/
+frontend/src/keys.js

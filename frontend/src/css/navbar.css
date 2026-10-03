@@ -1,0 +1,67 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white; /* Set your background color */
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* For a slight shadow */
+  }
+
+.navbar-logo img {
+    height: 40px; /* Adjust according to your needs */
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.navbar-search input {
+    width: 400px; /* Adjust width */
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left{
+    display: flex;
+    left: 0;
+    align-items: center;
+}
+
+.navbar-search input {
+width: 300px; /* Adjust width as per need */
+padding: 8px 10px;
+background-color: #f0f0f0; /* Gray background */
+border: none; /* Remove border */
+border-radius: 50px; /* Rounded corners */
+font-size: 14px;
+color: #333;
+margin-right: 20px; /* Space between search bar and icon */
+font-family: 'InterRegular';
+}
+
+.navbar-search input::placeholder {
+color: #999; /* Gray text for placeholder */
+}
+
+.navbar-icons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-option img {
+    width: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.navbar-option {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}

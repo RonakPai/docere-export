@@ -1,0 +1,5 @@
+Flask==3.0.3
+Flask-Cors==4.0.1
+gunicorn
+vertexai==1.64.0
+mysql-connector-python==8.3.0

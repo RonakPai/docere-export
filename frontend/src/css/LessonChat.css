@@ -1,0 +1,176 @@
+.lesson-chat-container {
+  width: 70vw;
+    height: 75vh;
+    margin: 30px;
+    background-color: white;
+    border-radius: 35px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.progress-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #5853ff; /* Blue bar */
+    transition: width 0.3s ease;
+    border-radius: 5px;
+}
+
+.progress-percent {
+    margin-left: 5px; /* Adds space between the bar and percentage */
+    font-size: 14px;
+    font-family: 'InterMedium', sans-serif;
+    color: #333;
+    position: relative;
+    left: 5px; /* Moves the percentage number to the right of the bar */
+    white-space: nowrap;
+}
+
+.lesson-chat-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message {
+    padding: 10px 15px;
+    border-radius: 15px;
+    max-width: 70%;
+    line-height: 1.4;
+    display: flex;
+}
+
+.message-logo {
+    width: 18px; /* Adjust the size of the logo as needed */
+    height: 20px;
+    margin-right: 10px; /* Adds space between the logo and the text */
+}
+
+.message.model {
+    background-color: #f9f9f9;
+    align-self: flex-start;
+}
+
+.message.user {
+    color: black;
+    align-self: flex-end;
+}
+
+.input-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.lesson-chat-input {
+    padding: 15px;
+    display: flex;
+}
+
+.get-hint {
+  background-color: #6c63ff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 20%;
+  align-self: flex-end;
+  text-align: center;
+  margin-top: 10px;
+  margin-right: 2%;
+}
+
+.lesson-chat-input textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f6f6f6;
+    font-family: "InterMedium";
+}
+
+.lesson-complete {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .lesson-complete-title {
+    font-size: 24px;
+  }
+
+  .lesson-complete-text {
+    width: 70%;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    align-self: center;
+  }
+  
+  /* Button styling similar to the one in the image */
+  .view-analysis {
+    background-color: #6c63ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 40%;
+    align-self: center;
+  }
+  
+  .view-analysis:hover {
+    background-color: #554cc8; /* Darken button on hover */
+  }
+
+  @keyframes blink {
+    0% {
+      opacity: 0.2;
+    }
+    20% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.2;
+    }
+  }
+  
+  .loading-dots {
+    display: inline-block;
+  }
+  
+  .loading-dots span {
+    display: inline-block;
+    font-size: 18px;
+    opacity: 0.2;
+    animation: blink 1.4s infinite both;
+  }
+  
+  .loading-dots span:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .loading-dots span:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  .message p{
+    margin: 0;
+    padding: 0;
+  }

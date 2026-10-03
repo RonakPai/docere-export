@@ -1,0 +1,30 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.center-image {
+    width: 20vw;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.login-slogan{
+    font-family: "InterLight";
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+.login-learn-more{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #6c63ff;
+    cursor: pointer;
+}
